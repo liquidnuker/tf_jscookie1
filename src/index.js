@@ -5,15 +5,20 @@ const Cookies = require("./js/vendor/jscookie.js");
 // console.log(Cookies.get('name'));
 
 // set with expire
-Cookies.set('name', 'value', {
-  expires: 7
-});
+// Cookies.set('name', 'value', {
+//   expires: 7
+// });
 // console.log(Cookies.get('name'));
 // console.log(Cookies.get());
 
+// set with expire + path
+// Cookies.set('name', 'value', { expires: 7, path: '' });
+// console.log(Cookies.get());
+
 // delete
-Cookies.remove('name');
-console.log(Cookies.get());
+// Cookies.remove('name');
+// console.log(Cookies.get());
+
 
 
 
