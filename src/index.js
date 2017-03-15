@@ -1,0 +1,1 @@
+import "./js/vendor/js.cookie.js";
