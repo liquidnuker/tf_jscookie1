@@ -1,8 +1,24 @@
 const Cookies = require("./js/vendor/js.cookie.js");
 
 // getset
-Cookies.set('name', 'value');
-console.log(Cookies.get('name'));
+// Cookies.set('name', 'value');
+// console.log(Cookies.get('name'));
+
+let ck = {
+    get: function(name) {
+      return Cookies.get(name);
+    },
+    set: function(name, value, attr) {
+      return Cookies.set(name, value, attr);
+    }
+};
+
+ck.set("name1", "value1");
+console.log(ck.get("name1"));
+
+
+
+
 
 // set with expire
 // Cookies.set('name', 'value', {
