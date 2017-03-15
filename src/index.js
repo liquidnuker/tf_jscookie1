@@ -1,1 +1,6 @@
-import "./js/vendor/js.cookie.js";
+const Cookies = require("./js/vendor/jscookie.js");
+
+// getset ok
+Cookies.set('name', 'value');
+console.log(Cookies.get('name'));
+
