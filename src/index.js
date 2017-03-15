@@ -1,8 +1,8 @@
-const Cookies = require("./js/vendor/jscookie.js");
+const Cookies = require("./js/vendor/js.cookie.js");
 
 // getset
-// Cookies.set('name', 'value');
-// console.log(Cookies.get('name'));
+Cookies.set('name', 'value');
+console.log(Cookies.get('name'));
 
 // set with expire
 // Cookies.set('name', 'value', {
