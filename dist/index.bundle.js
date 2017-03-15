@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,8 +71,8 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return cookieToggle; });
-var Cookies = __webpack_require__(2);
+/* unused harmony export cookieToggle */
+var Cookies = __webpack_require__(1);
 
 var cookieToggle = {
   get: function get(name) {
@@ -90,21 +90,6 @@ var cookieToggle = {
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__ = __webpack_require__(0);
-
-
-__WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].set("name1", "value1");
-console.log(__WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].get());
-
-// cookieToggle.remove("name1", "value1");
-console.log(__WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].get("name1"));
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -275,6 +260,27 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = 
 
 	return init(function () {});
 });
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__ = __webpack_require__(0);
+
+
+// cookieToggle.set("name1", "value1");
+// cookieToggle.set('name1', 'value1', { expires: 7 });
+// Cookies.set('name', 'value', { expires: 7, path: '' });
+// cookieToggle.remove("name1", "value1");
+
+// console.log(cookieToggle.get());
+// console.log(cookieToggle.get("name1"));
+
+// cookieToggle.set('name', 'value', { path: '' });
+// cookieToggle.remove('name'); // undef
+// cookieToggle.remove('name', { path: '' }); // removed!
 
 /***/ })
 /******/ ]);
