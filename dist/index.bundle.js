@@ -73,9 +73,14 @@
 
 var Cookies = __webpack_require__(4);
 
-// getset ok
-Cookies.set('name', 'value');
-console.log(Cookies.get('name'));
+// getset
+// Cookies.set('name', 'value');
+// console.log(Cookies.get('name'));
+
+// set with expire
+Cookies.set('name', 'value', { expires: 7 });
+// console.log(Cookies.get('name'));
+// console.log(Cookies.get());
 
 /***/ }),
 /* 2 */,
