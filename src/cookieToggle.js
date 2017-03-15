@@ -1,4 +1,4 @@
-import Cookies from "./js/vendor/js.cookie.js";
+const Cookies = require("./js/vendor/js.cookie.js");
 
 const cookieToggle = {
     get: function(name) {
@@ -10,3 +10,4 @@ const cookieToggle = {
 };
 
 export {cookieToggle};
+
