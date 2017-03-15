@@ -19,6 +19,11 @@ const Cookies = require("./js/vendor/jscookie.js");
 // Cookies.remove('name');
 // console.log(Cookies.get());
 
+// delete with path
+// Cookies.set('name', 'value', { path: '' });
+// console.log(Cookies.remove('name')); // undefined
+// console.log(Cookies.remove('name', { path: '' }));
+// console.log(Cookies.get());
 
 
 

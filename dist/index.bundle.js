@@ -264,6 +264,12 @@ var Cookies = __webpack_require__(0);
 // Cookies.remove('name');
 // console.log(Cookies.get());
 
+// delete with path
+// Cookies.set('name', 'value', { path: '' });
+// console.log(Cookies.remove('name')); // undefined
+// console.log(Cookies.remove('name', { path: '' }));
+// console.log(Cookies.get());
+
 
 // (function () {
 //   var clickHandlers = function () {
