@@ -67,25 +67,7 @@
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Cookies = __webpack_require__(4);
-
-// getset
-// Cookies.set('name', 'value');
-// console.log(Cookies.get('name'));
-
-// set with expire
-Cookies.set('name', 'value', { expires: 7 });
-// console.log(Cookies.get('name'));
-// console.log(Cookies.get());
-
-/***/ }),
-/* 2 */,
-/* 3 */,
-/* 4 */
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -256,6 +238,38 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = 
 
 	return init(function () {});
 });
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Cookies = __webpack_require__(0);
+
+// getset
+// Cookies.set('name', 'value');
+// console.log(Cookies.get('name'));
+
+// set with expire
+Cookies.set('name', 'value', {
+  expires: 7
+});
+// console.log(Cookies.get('name'));
+// console.log(Cookies.get());
+
+// delete
+Cookies.remove('name');
+console.log(Cookies.get());
+
+// (function () {
+//   var clickHandlers = function () {
+//     alert(Cookies.get('name'))
+//   };
+//   if (document.readyState !== "loading") clickHandlers();
+//   else if (document.addEventListener) document.addEventListener("DOMContentLoaded", clickHandlers);
+//   else document.attachEvent("onreadystatechange", function () {
+//     if (document.readyState === "complete") clickHandlers();
+//   });
+// })();
 
 /***/ })
 /******/ ]);
