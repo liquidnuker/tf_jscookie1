@@ -80,6 +80,9 @@ var cookieToggle = {
   },
   set: function set(name, value, attr) {
     return Cookies.set(name, value, attr);
+  },
+  remove: function remove(name, attr) {
+    return Cookies.remove(name, attr);
   }
 };
 
@@ -95,6 +98,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 __WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].set("name1", "value1");
+console.log(__WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].get());
+
+// cookieToggle.remove("name1", "value1");
 console.log(__WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].get("name1"));
 
 /***/ }),

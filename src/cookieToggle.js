@@ -6,6 +6,9 @@ const cookieToggle = {
     },
     set: function(name, value, attr) {
       return Cookies.set(name, value, attr);
+    },
+    remove: function(name, attr) {
+      return Cookies.remove(name, attr);
     }
 };
 
