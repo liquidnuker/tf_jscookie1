@@ -1,7 +1,6 @@
 import {cookieToggle} from "./cookieToggle.js"
 
-cookieToggle.set("name1", "value1");
-cookieToggle.set("name2", "value2");
+
 // cookieToggle.set('name1', 'value1', { expires: 7 });
 // Cookies.set('name', 'value', { expires: 7, path: '' });
 // cookieToggle.remove("name1", "value1");
@@ -15,10 +14,24 @@ cookieToggle.set("name2", "value2");
 
 // console.log(cookieToggle.getJSON()); // => { name: { foo: 'bar' } }
 // console.log(cookieToggle.getJSON("name1")); // => { foo: 'bar' }
-let x = cookieToggle.getJSON();
-console.log(x);
 
-document.body.innerHTML = x.name1; // value1
+let lastViewedItems = [];
+
+cookieToggle.set("name1", "value1");
+lastViewedItems.push(cookieToggle.getJSON("name1"));
+console.log(lastViewedItems);
+
+cookieToggle.set("name2", "value2");
+lastViewedItems.push(cookieToggle.getJSON("name2"));
+console.log(lastViewedItems);
+
+document.body.innerHTML = lastViewedItems;
+// document.body.innerHTML = lastViewedItems[1];
+// document.body.innerHTML = lastViewedItems.length;
+
+// document.body.innerHTML = x.name1; // value1
 // document.body.innerHTML = x.value1; // undef
+
+
 
 
