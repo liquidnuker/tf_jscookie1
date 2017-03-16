@@ -1,6 +1,6 @@
 import {cookieToggle} from "./cookieToggle.js"
 
-// cookieToggle.set("name1", "value1");
+cookieToggle.set("name1", "value1");
 // cookieToggle.set('name1', 'value1', { expires: 7 });
 // Cookies.set('name', 'value', { expires: 7, path: '' });
 // cookieToggle.remove("name1", "value1");
@@ -11,4 +11,8 @@ import {cookieToggle} from "./cookieToggle.js"
 // cookieToggle.set('name', 'value', { path: '' });
 // cookieToggle.remove('name'); // undef
 // cookieToggle.remove('name', { path: '' }); // removed!
+
+console.log(cookieToggle.getJSON());
+// console.log(cookieToggle.getJSON("name1"));
+
 

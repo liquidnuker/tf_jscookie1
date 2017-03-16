@@ -4,6 +4,9 @@ const cookieToggle = {
     get: function(name) {
       return Cookies.get(name);
     },
+    getJSON: function(name) {
+      return Cookies.getJSON(name);
+    },
     set: function(name, value, attr) {
       return Cookies.set(name, value, attr);
     },

@@ -71,12 +71,15 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export cookieToggle */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return cookieToggle; });
 var Cookies = __webpack_require__(1);
 
 var cookieToggle = {
   get: function get(name) {
     return Cookies.get(name);
+  },
+  getJSON: function getJSON(name) {
+    return Cookies.getJSON(name);
   },
   set: function set(name, value, attr) {
     return Cookies.set(name, value, attr);
@@ -270,7 +273,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__ = __webpack_require__(0);
 
 
-// cookieToggle.set("name1", "value1");
+__WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].set("name1", "value1");
 // cookieToggle.set('name1', 'value1', { expires: 7 });
 // Cookies.set('name', 'value', { expires: 7, path: '' });
 // cookieToggle.remove("name1", "value1");
@@ -281,6 +284,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // cookieToggle.set('name', 'value', { path: '' });
 // cookieToggle.remove('name'); // undef
 // cookieToggle.remove('name', { path: '' }); // removed!
+
+console.log(__WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].getJSON());
+// console.log(cookieToggle.getJSON("name1"));
 
 /***/ })
 /******/ ]);
