@@ -274,6 +274,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 __WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].set("name1", "value1");
+__WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].set("name2", "value2");
 // cookieToggle.set('name1', 'value1', { expires: 7 });
 // Cookies.set('name', 'value', { expires: 7, path: '' });
 // cookieToggle.remove("name1", "value1");
@@ -285,8 +286,13 @@ __WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].set("name
 // cookieToggle.remove('name'); // undef
 // cookieToggle.remove('name', { path: '' }); // removed!
 
-console.log(__WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].getJSON());
-// console.log(cookieToggle.getJSON("name1"));
+// console.log(cookieToggle.getJSON()); // => { name: { foo: 'bar' } }
+// console.log(cookieToggle.getJSON("name1")); // => { foo: 'bar' }
+var x = __WEBPACK_IMPORTED_MODULE_0__cookieToggle_js__["a" /* cookieToggle */].getJSON();
+console.log(x);
+
+document.body.innerHTML = x.name1; // value1
+// document.body.innerHTML = x.value1; // undef
 
 /***/ })
 /******/ ]);
