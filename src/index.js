@@ -26,6 +26,10 @@ lastViewedItems.push(cookieToggle.getJSON("name2"));
 console.log(lastViewedItems);
 
 document.body.innerHTML = lastViewedItems;
+// document.body.innerHTML = lastViewedItems.toString().toUpperCase();
+
+// cookieToggle.set(lastViewedItems.toString());
+console.log(cookieToggle.getJSON());
 // document.body.innerHTML = lastViewedItems[1];
 // document.body.innerHTML = lastViewedItems.length;
 
