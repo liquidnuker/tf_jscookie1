@@ -1,4 +1,4 @@
-import {cookieToggle} from "./cookieToggle.js"
+import {cookieToggle} from "./js/cookieToggle.js"
 
 
 // cookieToggle.set('name1', 'value1', { expires: 7 });

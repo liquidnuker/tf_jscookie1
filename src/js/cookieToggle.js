@@ -1,4 +1,4 @@
-const Cookies = require("./js/vendor/js.cookie.js");
+const Cookies = require("./vendor/js.cookie.js");
 
 const cookieToggle = {
     get: function(name) {
